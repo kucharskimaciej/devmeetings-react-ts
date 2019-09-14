@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "start": "gitbook serve"
+    "start": "gitbook serve",
+    "build": "gitbook install && gitbook build",
+    "deploy": "gh-pages -d _book"
   },
   "dependencies": {
     "gh-pages": "^2.1.1",
