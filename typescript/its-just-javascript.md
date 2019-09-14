@@ -39,7 +39,7 @@ const getTitle = book => book.name;
 const titles = books.map(getTitle);
 
 const titlesOfExpensiveBooks = books
-    .filter(book => book.pirce > 20)
+    .filter(book => book.price > 20)
     .map(getTitle);
 ```
 
