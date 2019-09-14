@@ -1,6 +1,8 @@
 <div style="text-align:center"><img width=500 src="/assets/logo_devmeetings_international.png" /></div>
 <div style="text-align:center"><img width=600 src="/assets/tsreact.png" /></div>
 
+# Link to this page: [http://bit.ly/devmeeting-react-ts](http://bit.ly/devmeeting-react-ts)
+
 # Agenda
 
 1. Hello, Devmeetings
