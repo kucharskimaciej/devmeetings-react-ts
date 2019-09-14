@@ -1,0 +1,770 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Passing data to a component · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="loops.html" />
+    
+    
+    <link rel="prev" href="small-components.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Devmeeting React + Typescript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../typescript/">
+            
+                <a href="../typescript/">
+            
+                    
+                    Typescript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../typescript/its-just-javascript.html">
+            
+                <a href="../typescript/its-just-javascript.html">
+            
+                    
+                    It's just JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../typescript/basic-types.html">
+            
+                <a href="../typescript/basic-types.html">
+            
+                    
+                    Basic types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../typescript/typing-objects.html">
+            
+                <a href="../typescript/typing-objects.html">
+            
+                    
+                    Typing objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../typescript/typing-functions.html">
+            
+                <a href="../typescript/typing-functions.html">
+            
+                    
+                    Typing functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../typescript/generic-types.html">
+            
+                <a href="../typescript/generic-types.html">
+            
+                    
+                    Generic types
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../typescript/modules.html">
+            
+                <a href="../typescript/modules.html">
+            
+                    
+                    Modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../typescript/tasks.html">
+            
+                <a href="../typescript/tasks.html">
+            
+                    
+                    Tasks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../react/">
+            
+                <a href="../react/">
+            
+                    
+                    Hello React
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../react/quick-look-around.html">
+            
+                <a href="../react/quick-look-around.html">
+            
+                    
+                    Quick look around
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../react/jsx.html">
+            
+                <a href="../react/jsx.html">
+            
+                    
+                    JSX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../react/first-component.html">
+            
+                <a href="../react/first-component.html">
+            
+                    
+                    First component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../react/tasks.html">
+            
+                <a href="../react/tasks.html">
+            
+                    
+                    Tasks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Components & Props
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="small-components.html">
+            
+                <a href="small-components.html">
+            
+                    
+                    Small components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="passing-data.html">
+            
+                <a href="passing-data.html">
+            
+                    
+                    Passing data to a component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="loops.html">
+            
+                <a href="loops.html">
+            
+                    
+                    Loops in JSX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="tasks.html">
+            
+                <a href="tasks.html">
+            
+                    
+                    Tasks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../components-state/">
+            
+                <a href="../components-state/">
+            
+                    
+                    Stateful components
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../components-state/events.html">
+            
+                <a href="../components-state/events.html">
+            
+                    
+                    Handling events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../components-state/use-state.html">
+            
+                <a href="../components-state/use-state.html">
+            
+                    
+                    Components with internal state
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../components-state/output.html">
+            
+                <a href="../components-state/output.html">
+            
+                    
+                    Talking to a parent component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../components-state/smart-and-dumb.html">
+            
+                <a href="../components-state/smart-and-dumb.html">
+            
+                    
+                    Smart and dumb components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../workshops.html">
+            
+                <a href="../workshops.html">
+            
+                    
+                    Before the break
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../components-state/tasks.html">
+            
+                <a href="../components-state/tasks.html">
+            
+                    
+                    Tasks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../side-effects-context/">
+            
+                <a href="../side-effects-context/">
+            
+                    
+                    Side-effects and context
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../side-effects-context/side-effects.html">
+            
+                <a href="../side-effects-context/side-effects.html">
+            
+                    
+                    Side-effects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../side-effects-context/prop-drilling.html">
+            
+                <a href="../side-effects-context/prop-drilling.html">
+            
+                    
+                    Prop drilling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../side-effects-context/context.html">
+            
+                <a href="../side-effects-context/context.html">
+            
+                    
+                    Using context
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../side-effects-context/tasks.html">
+            
+                <a href="../side-effects-context/tasks.html">
+            
+                    
+                    Tasks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Passing data to a component</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="passing-data-to-components">Passing data to components</h1>
+<p>Let&apos;s take a look at the <code>App</code> component we&apos;ve created earlier:</p>
+<pre><code class="lang-jsx"><span class="hljs-keyword">const</span> App: React.FC = () =&gt; {
+    <span class="hljs-keyword">const</span> product = {
+      name: <span class="hljs-string">&quot;JavaScript: The Definitive Guide&quot;</span>,
+      description: <span class="hljs-string">`Since 1996, JavaScript: The Definitive Guide...`</span>,
+      price: <span class="hljs-number">28.89</span>
+    }
+
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello DevMeetings!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>{ product.name }<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+                    { product.description }
+                <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>{ product.price }$<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></span>
+    )
+}
+</code></pre>
+<p>It&apos;s simple, but there still is <em>some</em> complexity: </p>
+<ul>
+<li>some (primitive) state inside, </li>
+<li>title displayed</li>
+<li>product displayed</li>
+</ul>
+<p>First target for extraction should be the code that is responsible for displaying a product.</p>
+<h2 id="the-product-component">The product component</h2>
+<p>After some copy-pasting, here&apos;s the extracted <code>SingleProduct</code> component:</p>
+<pre><code class="lang-jsx"><span class="hljs-keyword">const</span> SingleProduct: React.FC = () =&gt; {
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>{ product.name }<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+                { product.description }
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>{ product.price }$<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    )
+}
+</code></pre>
+<p>The problem here is of course that the <code>product</code> variable is in the <code>App</code> component and undefined in the <code>SingleProduct</code> component. 
+We need to be able to pass data from a parent (<code>App</code>) to the child (<code>SingleProduct</code>). If we were talking about functions, and not components it would look more or less like that:</p>
+<pre><code class="lang-typescript">
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">SingleProduct</span>(<span class="hljs-params">product: Product</span>) </span>{
+    <span class="hljs-comment">/* ... */</span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">App</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">const</span> product = { <span class="hljs-comment">/* ... */</span> };
+
+    SingleProduct(product);
+}
+</code></pre>
+<p>This is a terrible piece of pseudo-code, but it illustrates the idea: we want to be able to pass arguments to the <code>SingleProduct</code> function.</p>
+<h2 id="props">Props</h2>
+<p>The proper way of passing data down the component tree (from parent to child) is through props. They embody the same concept as function above, just use different syntax:</p>
+<pre><code class="lang-jsx">&lt;Component foo={<span class="hljs-number">42</span>} bar={<span class="hljs-string">&quot;Hello, Devmeetings&quot;</span>} /&gt;
+</code></pre>
+<p>That&apos;s it - we just passed two pieces of data into the <code>Component</code>: <code>foo</code> that is equal to <code>42</code>, and <code>bar</code>: the string <code>&quot;Hello, Devmeetings&quot;</code>. </p>
+<p>Let&apos;s get back to the function analogy for a second. Defining it like this would make no sense:</p>
+<pre><code class="lang-typescript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Component</span>(<span class="hljs-params">foo: <span class="hljs-built_in">number</span>, bar: <span class="hljs-built_in">string</span></span>) </span>{
+    <span class="hljs-comment">/* ... */</span>
+}
+</code></pre>
+<p>In this case we are entirely reliant on the order of arguments, and their names don&apos;t matter event though we typed them. This is much better:</p>
+<pre><code class="lang-typescript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Component</span>(<span class="hljs-params">props: { foo: <span class="hljs-built_in">number</span>; bar: <span class="hljs-built_in">string</span>; }</span>) </span>{
+    <span class="hljs-comment">/* ... */</span>
+}
+</code></pre>
+<h2 id="component-with-props">Component with props</h2>
+<p>This is exactly what happens in React:</p>
+<pre><code class="lang-jsx"><span class="hljs-keyword">const</span> SingleProduct: React.FC = (props: { product: Product }) =&gt; {
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>{ props.product.name }<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+                { props.product.description }
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>{ props.product.price }$<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    )
+}
+</code></pre>
+<p>We can even improve the component&apos;s code, so it&apos;s easier to use:</p>
+<pre><code class="lang-jsx"><span class="hljs-keyword">export</span> type SingleProductProps = { product: Product };
+
+<span class="hljs-keyword">const</span> SingleProduct: React.FC&lt;SingleProductProps&gt; = ({ product }) =&gt; {
+    <span class="hljs-keyword">return</span> (
+        <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>{ product.name }<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+                { product.description }
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>{ product.price }$<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+    )
+}
+</code></pre>
+<p>Much better! With couple of simple changes, we gained:</p>
+<ul>
+<li>understanding that the <code>React.FC</code> is a generic type we got better type safety and IDE support,</li>
+<li>by destructuring the <code>props</code> argument simplifies code inside the component,</li>
+<li>by extracting the <code>SingleProductProps</code> into a type we got a minimalistic documentation</li>
+</ul>
+<h3 id="resources">Resources</h3>
+<ul>
+<li><a href="https://reactjs.org/docs/components-and-props.html" target="_blank">Components and props</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="small-components.html" class="navigation navigation-prev " aria-label="Previous page: Small components">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="loops.html" class="navigation navigation-next " aria-label="Next page: Loops in JSX">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Passing data to a component","level":"1.4.2","depth":2,"next":{"title":"Loops in JSX","level":"1.4.3","depth":2,"path":"components-props/loops.md","ref":"components-props/loops.md","articles":[]},"previous":{"title":"Small components","level":"1.4.1","depth":2,"path":"components-props/small-components.md","ref":"components-props/small-components.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["edit-link","advanced-emoji"],"pluginsConfig":{"edit-link":{"label":"Edit This Page","base":"https://github.com/kucharskimaciej/devmeetings-react-ts/edit/master/"},"advanced-emoji":{"embedEmojis":false},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"components-props/passing-data.md","mtime":"2019-09-11T21:34:23.127Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-14T05:28:33.699Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
