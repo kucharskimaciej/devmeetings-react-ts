@@ -1,0 +1,8 @@
+{
+  "plugins": ["edit-link", "advanced-emoji"],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/kucharskimaciej/devmeetings-react-ts/edit/master/"
+    }
+  }
+}

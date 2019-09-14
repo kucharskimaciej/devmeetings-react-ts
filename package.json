@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "gitbook serve"
+  },
+  "dependencies": {
+    "gh-pages": "^2.1.1",
+    "gitbook-plugin-advanced-emoji": "^0.2.2"
+  }
+}
